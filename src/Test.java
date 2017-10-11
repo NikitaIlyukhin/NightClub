@@ -36,20 +36,20 @@ public class Test {
                         if (music.equals(Music.RNB)) {
                             this.music = Music.ELECTRO;
                         } else this.music = Music.RNB;
-                        System.out.println("Играет музыка:" + music);
+                        System.out.println("Играет музыка:" + this.music);
                         if (music.equals(Music.RNB) || music.equals(Music.ELECTRO)) {
                             for (int i = 0; i < numberMen; i++) {
                                 Man man = new Man();
                                 if (music.equals(Music.RNB)) {
-                                    man.musik = Music.RNB;
-                                } else man.musik = Music.ELECTRO;
+                                    man.music = Music.RNB;
+                                } else man.music = Music.ELECTRO;
                                 Man.move(man);
                             }
                             for (int i = 0; i < numberWomen; i++) {
                                 Woman woman = new Woman();
                                 if (music.equals(Music.RNB)) {
-                                    woman.musik = Music.RNB;
-                                } else woman.musik = Music.ELECTRO;
+                                    woman.music = Music.RNB;
+                                } else woman.music = Music.ELECTRO;
                                 Woman.move(woman);
 
                             }
